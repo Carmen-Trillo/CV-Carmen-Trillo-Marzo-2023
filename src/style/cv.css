@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+@font-face {
+  font-family: "Abel";
+  src: url("../font/Abel.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Antonio";
+  src: url("../font/Antonio.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  display: flex;
+  font-family: "Abel";
+  width: 100vw;
+  font-size: 20px;
+}
+
+h1 {
+  color: #3C70AE;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+p {
+  font-size: 24px;
+}
+
+.column1 {
+  background-color: rgb(234, 233, 233);
+  padding: 6vh 2vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 30vw;
+  border-right: #3C70AE solid 1px;
+  box-shadow: 5px 5px 10px;
+}
+
+.column2 {
+  left: 25vw;
+  background-color: white;
+  padding: 2vh 2.5vw;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  border-left: grey solid 1px;
+  margin-left: 5px;
+}
+
+#name {
+  text-align: center;
+}
+#name img {
+  height: 35vh;
+  border-radius: 180px;
+  border: #3C70AE solid 2px;
+  box-shadow: 5px 5px #e5e8eb;
+}
+
+#job h2 {
+  position: relative;
+  text-align: center;
+  color: #3C70AE;
+  font-weight: lighter;
+  font-family: "Montserrat";
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom: 2vh;
+}
+
+.column1-item {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.column1-item h2 {
+  color: #3C70AE;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2vh;
+}
+
+#functions, #skills, #qualities {
+  text-align: center;
+}
+
+#skillsImg {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#skillsImg img {
+  width: 6vw;
+  margin: auto;
+  padding: 0.5vh 0.5vw;
+}
+
+#dates {
+  display: grid;
+  grid-template-columns: 0.7fr 2.5fr;
+  margin-top: 1.2vh;
+  align-items: center;
+}
+#dates img {
+  width: 2.5vw;
+  left: 1.7vw;
+}
+#dates a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+#dates a:hover {
+  border-bottom: #3C70AE solid 1.5px;
+}
+
+#experience h2, #titles h2 {
+  background-color: rgb(234, 233, 233);
+  color: #3C70AE;
+  text-align: right;
+  padding-right: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 5vh;
+}
+#experience h2, #titles h2 {
+  color: #3C70AE;
+  text-transform: uppercase;
+}
+#experience h3, #titles h3 {
+  color: #3C70AE;
+  font-family: "Antonio";
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-top: 4.5vh;
+}
+
+#programming, #consultant, #administrative {
+  line-height: 5vh;
+  margin-left: 2vw;
+  font-size: 24px;
+  margin-top: 4vh;
+}
+#programming h3, #consultant h3, #administrative h3 {
+  color: #3C70AE;
+  font-family: "Antonio";
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+#programming h4, #consultant h4, #administrative h4 {
+  color: #3C70AE;
+  font-weight: lighter;
+  position: relative;
+}/*# sourceMappingURL=cv.css.map */

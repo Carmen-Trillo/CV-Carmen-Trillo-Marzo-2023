@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin:0%;
+    padding:0%;
+    }
+
+@font-face {
+    font-family: 'Abel';
+    src: url('../font/Abel.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    }
+
+@font-face {
+    font-family: 'Antonio';
+    src: url('../font/Antonio.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    }
+
+$blue: #3C70AE;
+$grey: rgb(234, 233, 233);
+
+body {
+    display: flex;
+    font-family: 'Abel';
+    width: 100vw;
+    font-size: 20px;
+}
+
+h1 {
+    color: $blue;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+p{
+    font-size: 24px;
+}
+
+.column1{
+    background-color: $grey;
+    padding: 6vh 2vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30vw;
+    border-right: $blue solid 1px;
+    box-shadow: 5px 5px 10px;
+}
+
+.column2{
+    left: 25vw;
+    background-color: white;
+    padding: 2vh 2.5vw;
+    flex-grow: 2;
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: column;
+    width: 70vw;
+    border-left: grey solid 1px;
+    margin-left: 5px;
+}
+
+#name {
+    text-align: center;
+    img{
+        height: 35vh;
+        border-radius: 180px;
+        border: $blue solid 2px;
+        box-shadow: 5px 5px #e5e8eb;
+    }
+}
+
+#job h2{
+    position: relative;
+    text-align:center;
+    color: $blue;
+    font-weight: lighter;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    text-transform:capitalize;
+    margin-bottom: 2vh;
+}
+
+.column1-item{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    h2{
+        color: $blue;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 2vh;
+    }
+}
+
+#functions, #skills, #qualities {
+    text-align: center;
+}
+
+#skillsImg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    img{
+        width: 6vw;
+        margin: auto;
+        padding: 0.5vh 0.5vw;
+    }
+}
+
+#dates {
+    display: grid;
+    grid-template-columns: 0.7fr 2.5fr;
+    margin-top: 1.2vh;
+    align-items: center;
+    img{
+        width: 2.5vw;
+        left: 1.7vw;  
+    }
+    a {
+        text-decoration: none;
+        color:black;
+        font-size: 24px;
+    }
+    a:hover {
+        border-bottom: $blue solid 1.5px;
+    }
+}
+
+#experience, #titles{
+    h2{
+        background-color: $grey;
+        color: $blue;
+        text-align: right;
+        padding-right: 2vw;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        text-transform: uppercase;
+        position: relative;
+        margin-top: 5vh;
+    }
+    h2{
+        color: $blue;
+        text-transform: uppercase;
+    }
+    h3{
+        color:$blue;
+        font-family: 'Antonio';
+        text-transform: uppercase;
+        font-weight: lighter;
+        margin-top: 4.5vh;
+    }
+}
+
+#programming, #consultant, #administrative {
+    line-height: 5vh;
+    margin-left: 2vw;
+    font-size: 24px;
+    margin-top: 4vh;
+    h3{
+        color:$blue;
+        font-family: 'Antonio';
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+     h4{
+        color:$blue;
+        font-weight: lighter;
+        position: relative;
+    }
+}
