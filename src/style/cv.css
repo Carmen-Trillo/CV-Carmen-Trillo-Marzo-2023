@@ -66,8 +66,8 @@ p {
   text-align: center;
 }
 #name img {
-  height: 35vh;
-  border-radius: 180px;
+  width: 20vw;
+  border-radius: 180vw;
   border: #3C70AE solid 2px;
   box-shadow: 5px 5px #e5e8eb;
 }
@@ -137,8 +137,6 @@ p {
   text-transform: uppercase;
   position: relative;
   margin-top: 5vh;
-}
-#experience h2, #titles h2 {
   color: #3C70AE;
   text-transform: uppercase;
 }
@@ -147,7 +145,7 @@ p {
   font-family: "Antonio";
   text-transform: uppercase;
   font-weight: lighter;
-  margin-top: 4.5vh;
+  margin-top: 3.5vh;
 }
 
 #programming, #consultant, #administrative {
@@ -166,4 +164,100 @@ p {
   color: #3C70AE;
   font-weight: lighter;
   position: relative;
+}
+
+#project {
+  line-height: 5vh;
+  text-align: center;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  margin-top: 2vh;
+  border: #3C70AE 2px solid;
+  border-radius: 5px;
+  margin-bottom: 3vh;
+}
+#project h4 {
+  color: #3C70AE;
+  font-weight: lighter;
+  position: relative;
+  font-size: larger;
+}
+#project a {
+  color: black;
+  font-size: 24px;
+}
+
+#pages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 320px) and (max-width: 760px) {
+  h1 {
+    font-size: 16px;
+  }
+  #name {
+    margin-top: -2vh;
+  }
+  #job {
+    margin-top: 0;
+  }
+  #job h2 {
+    font-size: 9px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .column1-item {
+    margin-bottom: 0;
+  }
+  .column1-item h2 {
+    font-size: 12px;
+  }
+  .column1-item p {
+    font-size: 9px;
+  }
+  #functions, #skills, #qualities {
+    margin: 0;
+  }
+  #dates a {
+    font-size: 12px;
+  }
+  #experience h2, #titles h2 {
+    font-size: 14px;
+    padding-top: 0.2vh;
+    padding-bottom: 0.2vh;
+    margin-top: 1vh;
+    margin-right: 2vw;
+  }
+  #experience h3, #titles h3 {
+    font-size: 12px;
+    margin-top: 1.5vh;
+  }
+  #experience p, #titles p {
+    font-size: 9px;
+  }
+  #programming, #consultant, #administrative {
+    line-height: 1.8vh;
+    font-size: 9px;
+    margin-top: 0.5vh;
+  }
+  #programming h3, #consultant h3, #administrative h3 {
+    font-size: 12px;
+  }
+  #programming h4, #consultant h4, #administrative h4 {
+    font-size: 10px;
+  }
+  #project {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    line-height: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  #project h4 {
+    font-size: 12px;
+  }
+  #project a {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=cv.css.map */
